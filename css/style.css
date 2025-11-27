@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background: #a23f25;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar ul .contact{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar ul .contact li,
+.navbar ul .contact span {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul .social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar ul .social li {
+    display: flex;
+    align-items: center;
+}
+.navbar ul .social li a :hover {
+    font-size: 20px;
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar span {
+    color: white;
+    font-size: 14px;
+}
+
+.header{
+    width: auto;
+    height: 100px;
+    background-color: black;
+    
+}
+.header ul .liquor{
+    display: block;
+    justify-content: left;
+    align-items: left;
+    margin-left: 100px;
+    list-style: none;
+    padding-top: 30px;
+    font-size: 25px;
+    
+    
+}
+.header ul .liquor a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.header ul .nav {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-right: 100px;
+    margin-top: -50px;
+    list-style: none;
+    padding-top: 30px;
+    font-size: 15px;
+    gap: 30px;
+}
+.header ul .nav a{
+    text-decoration: none;
+    color: #ffffff80;
+    font-weight: lighter;
+}
+.header ul .nav a:hover{
+    color: rgb(239, 153, 153);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header ul .bag a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+.header ul .bag a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.body{
+    width: auto;
+    height: 500px;
+    background-color: black;
+    
+    background-image: url(../images/bg_2.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.body .text .co{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-9deg);
+    color: white;
+    text-align: center;
+    
+}
+.body .text .co h1{
+    font-size: 80px;
+    width: 900px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    
+    
+}
+.body .shopnow {
+    padding: 15px 30px;
+    
+    background-color: #b7472a;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.body .shopnow a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: capitalize;
+
+
+}
+
+.body .shopnow:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+.body .readmore{
+       padding: 15px 30px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+
+}
+.body .readmore a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+.body .readmore:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.body .buttons-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-9deg);
+    text-align: center;
+}
+.body .buttons-container .shopnow {
+    margin-top: 150px;
+}
+
+/* Dropdown Menu Styles */
+.header ul .nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header ul .nav .dropdown > a::after {
+    content: " ▼";
+    font-size: 16px;
+    margin-left: 8px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.header ul .nav .dropdown:hover > a::after {
+    transform: rotate(180deg);
+}
+
+.header ul .nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.header ul .nav .dropdown-content a {
+    color: #ffffff80;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+.header ul .nav .dropdown-content a:hover {
+    background-color: #555;
+    color: rgb(239, 153, 153);
+    font-weight: bold;
+}
+
+.header ul .nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
